@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(270deg, #43cea2, #185a9d, #ff6a00);
+  background-size: 600% 600%;
+  animation: gradientMove 15s ease infinite;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom Table Styles */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.75rem;
+  font-size: 16px;
+}
+
+.table thead tr {
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient Header */
+  color: #ffffff;
+  border-radius: 0.35rem;
+}
+
+.table thead th {
+  padding: 0.75rem 1rem;
+  border: none;
+}
+
+.table tbody tr {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.01);
+}
+
+.table td {
+  padding: 0.75rem 1rem;
+  color: #333;
+  border-top: none;
+  vertical-align: middle;
+}
+
+.table td:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+.table td:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+.btn {
+  margin-right: 0.4rem;
+}
+.table tbody tr {
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  color: white;
+}
